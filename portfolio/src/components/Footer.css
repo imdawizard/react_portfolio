@@ -1,0 +1,40 @@
+
+
+
+.footer {
+    background-color: black;
+    color: black;
+    padding: 13px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+  }
+
+  .footer div {
+    color: white;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 297px) {
+    .footer {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 241px) {
+    .footer {
+      font-size: 10px;
+    }
+  }
+  

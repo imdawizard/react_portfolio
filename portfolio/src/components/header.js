@@ -1,18 +1,30 @@
 // Header.js
 
 import React from 'react';
-import './Header.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import './Header.css';
+import portfolioPic from '../assets/images/Smiling_in_London.jpg';
 
 function Header() {
   return (
     <header>
-      <h1>Nate Kester</h1>
+      <h1>
+        <Link to='/' style= {{textDecoration: 'none' }} class='nate'>Nate Kester</Link>
+      </h1>
       <nav>
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li>
+            <Link to="/">About Me</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/resume">Resume</Link>
+          </li>
         </ul>
       </nav>
     </header>
@@ -20,3 +32,5 @@ function Header() {
 }
 
 export default Header;
+
+
