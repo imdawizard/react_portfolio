@@ -1,6 +1,8 @@
 import React from 'react';
 import './AboutMe.css'; // Import the CSS file
 import portfolioPic from '../assets/images/Smiling_in_London.jpg';
+import 'tailwindcss/tailwind.css';
+
 
 function AboutMe() {
   return <section className="about-me">
