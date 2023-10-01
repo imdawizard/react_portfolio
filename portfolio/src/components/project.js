@@ -15,7 +15,7 @@ function Project({ title, description, projectLink, githubLink, imageUrl }) {
           <div className="project-overlay">
             <div className="project-title">{title}</div>
             <div className="project-description">{description}</div>
-            <a href={projectLink} target="_blank" rel="noopener noreferrer" className="btn-primary mr-2">Deployed Website</a>
+            <a href={projectLink} target="_blank" rel="noopener noreferrer" className="btn-primary mr-2">Deployed Website</a> ---
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="btn-secondary">GitHub</a>
           </div>
         </div>

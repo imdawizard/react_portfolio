@@ -1,29 +1,64 @@
 // Header.js
 
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
-import portfolioPic from '../assets/images/Smiling_in_London.jpg';
 
 function Header() {
+  const [activeLink, setActiveLink] = useState('');
+
+  const handleLinkClick = (to) => {
+    setActiveLink(to);
+  };
+
   return (
     <header>
       <h1>
-        <Link to='/' style= {{textDecoration: 'none' }} class='nate'>Nate Kester</Link>
+        <NavLink exact to="/" onClick={() => handleLinkClick('/')}>
+          Welcome to my Website!
+        </NavLink>
       </h1>
       <nav>
         <ul>
           <li>
-            <Link to="/">About Me</Link>
+            <NavLink
+              exact
+              to="/"
+              className={`nav-link ${activeLink === '/' ? 'active-link' : ''}`}
+              onClick={() => handleLinkClick('/')}
+            >
+              About Me
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio">Portfolio</Link>
+            <NavLink
+              exact
+              to="/portfolio"
+              className={`nav-link ${activeLink === '/portfolio' ? 'active-link' : ''}`}
+              onClick={() => handleLinkClick('/portfolio')}
+            >
+              Portfolio
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink
+              exact
+              to="/contact"
+              className={`nav-link ${activeLink === '/contact' ? 'active-link' : ''}`}
+              onClick={() => handleLinkClick('/contact')}
+            >
+              Contact
+            </NavLink>
           </li>
           <li>
-            <Link to="/resume">Resume</Link>
+            <NavLink
+              exact
+              to="/resume"
+              className={`nav-link ${activeLink === '/resume' ? 'active-link' : ''}`}
+              onClick={() => handleLinkClick('/resume')}
+            >
+              Resume
+            </NavLink>
           </li>
         </ul>
       </nav>

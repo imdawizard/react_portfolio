@@ -1,5 +1,5 @@
 body {
-    background-color: #ecf0f1;
+  background-color: #F0F0F0;
 }
 
 .nate-pic {
@@ -7,7 +7,7 @@ body {
     max-width: 50px;
     height: 50px;
     border-radius: 48%;
-    box-shadow: 3px -3px 20px 10px gray;
+    box-shadow: 3px -3px 10px 5px gray;
 }
 
 .about-me {
@@ -16,58 +16,64 @@ body {
     align-items: center;
     text-align: center;
     padding: 40px;
-    background-color: #f5f5f5; /* Set your desired background color */
+    background-color: #F0F0F0;
+    font-size: 30px;
   }
   
   /* Profile Picture */
   .about-me-image img {
     max-width: 600px;
     height: auto;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%;
     margin-bottom: 20px;
   }
   
   /* About Me Content */
   .about-me-content {
-    max-width: 600px;
+    max-width: 750px;
     margin: 0 auto;
   }
   
   /* Heading */
   .about-me h2 {
-    font-size: 24px;
-    color: #333; /* Set your desired text color */
+    font-size: 40px;
     margin-bottom: 20px;
+    font-weight: bold;
+    color: lightblue;
   }
   
   /* Paragraphs */
   .about-me p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
-    color: #555; /* Set your desired text color */
     margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  div p  a{
+    color: lightblue;
   }
 
   /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .about-me {
-      padding: 10px; /* Further reduce padding for very small screens */
+      padding: 10px;
     }
   
     .about-me-image img {
-      max-width: 100px; /* Adjust max-width for very small screens */
+      max-width: 100px; 
     }
   
     .about-me-content {
-      max-width: 90%; /* Adjust max-width for very small screens */
+      max-width: 90%; 
     }
   
     .about-me h2 {
-      font-size: 18px; /* Adjust font size for very small screens */
+      font-size: 45px;
     }
   
     .about-me p {
-      font-size: 12px; /* Adjust font size for very small screens */
+      font-size: 18px; 
     }
   }
   

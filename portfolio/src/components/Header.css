@@ -1,8 +1,13 @@
 /* Header.css */
+.nav-link.active-link {
+  color: lightblue;
+}
 
 header {
-    background-color: black; 
-    color: #fff; 
+    background-color: #25293A; 
+    color: #F0F0F0; 
+    font-size: 30px;
+    font-weight: 500;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -23,12 +28,47 @@ header {
     margin-right: 20px;
   }
   
-  nav a {
+  nav .nav-link {
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
     font-weight: bold;
+  }
+
+  nav .nav-link:hover {
+    text-decoration: underline;
+    color: lightblue;
   }
 
 .nate {
   padding-left: 25px;
+  
+}
+
+.active-link {
+  color: #00f; 
+  font-weight: bold; 
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 24px; 
+    padding: 10px; 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  nav ul {
+    flex-direction: column; 
+  }
+
+  nav li {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .nate {
+    padding-left: 0; 
+    margin-bottom: 10px; 
+  }
 }

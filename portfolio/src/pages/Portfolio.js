@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '../components/project';
-import './Portfolio.css'; // Import the CSS file
+import './Portfolio.css';
 import magicCard from '../assets/images/man_holding_card.jpg'
 import text from '../assets/images/texting.jpg'
 import wheather from '../assets/images/wheatherDashboard.png'
@@ -8,7 +8,6 @@ import calendar from '../assets/images/calendar.jpg'
 import onlineShopping from '../assets/images/shopping_online.jpg'
 
 function Portfolio() {
-  // Create an array of project data
   const projects = [
     {
       title: 'MarsMadness',
@@ -56,7 +55,7 @@ function Portfolio() {
 
   return (
     <section className="portfolio">
-      <h2 className="text-3xl font-semibold mb-4">Portfolio</h2>
+      <h2 className="text-3xl font-semibold mb-4 portfolio">Portfolio</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <Project key={index} {...project} />
