@@ -19,7 +19,7 @@ function Portfolio() {
     {
       title: 'Magic Mania',
       description: 'Make a deck, and discover cards from your favourite magic cards!',
-      projectLink: 'https://maniamagic-2b772cb3f9e0.herokuapp.com/User#/ ',
+      projectLink: 'https://maniamagic-2b772cb3f9e0.herokuapp.com/User#/',
       githubLink: 'https://github.com/mayaj0yce/magicMania',
       imageUrl: magicCard, 
     },
