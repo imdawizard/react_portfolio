@@ -43,7 +43,7 @@ GitHub: [Nate's Repo](https://github.com/imdawizard)
 Email: nate.is.cool.yeah@gmail.com
 
 ## Link to deployed application:
-https://imdawizard.github.io/react_portfolio/
+https://nates-react-portfolio.netlify.app/ 
 
 ## Link to github repo:
 https://github.com/imdawizard/react_portfolio
